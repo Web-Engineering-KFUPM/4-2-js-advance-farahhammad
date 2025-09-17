@@ -111,6 +111,22 @@ Task:
    in each block so you can see the flow of control.
 */
 
+function fun(arr) {
+    if (arr.length === 0) {
+        throw new Error("Array is empty");
+    }
+    return Math.max(...arr);
+}
+try {
+    let empty = [];
+    let maxVal = fun(empty);
+    console.log("Maximum value is:", maxVal);
+} catch (e) {
+    console.error("Caught an error");
+} finally {
+    console.log("Finally block executed");
+}
+
 // ===================================================================================
 // TODO-7: REGEX + forEach — find words containing 'ab' and log matches from the list
 // ===================================================================================
