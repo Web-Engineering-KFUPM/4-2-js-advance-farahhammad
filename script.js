@@ -64,6 +64,10 @@ Task:
 2) Use .charAt(index) and .length to output characters and size.
 */
 
+const str = "Hi";
+console.log(str.length);
+console.log(str.charAt(0));
+
 // ===================================
 // TODO-4: DATE — day, month, and year
 // ===================================
