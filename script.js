@@ -83,8 +83,6 @@ console.log(d.getMonth());
 console.log(d.getFullYear());
 
 
-
-
 // ============================================================
 // TODO-5: ARRAY + SPREAD — find MIN and MAX from 10 numbers
 // ============================================================
@@ -122,7 +120,7 @@ try {
     let maxVal = fun(empty);
     console.log("Maximum value is:", maxVal);
 } catch (e) {
-    console.error("Caught an error");
+    console.error("Caught an error", e.message);
 } finally {
     console.log("Finally block executed");
 }
@@ -138,7 +136,6 @@ Given: const words = ["ban", "babble", "make", "flab"];
 3) For matches, log "<word> matches!".
 4) Display the words that matches the pattern.
 */
-
 
 const words = ["ban", "babble", "make", "flab"];
 const pattern = /ab/;
